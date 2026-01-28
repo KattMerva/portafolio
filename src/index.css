@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E85D9E;
+  --color-primaryLight: #FCE7F3;
+  --color-softPink: #FCE7F0;
+  --color-lavender: #F3E8FF;
+  --color-dark: #2D2D2D;
+  --color-muted: #687280;
+  --color-mutedPink: #886375;
+  --color-light: #FCFCFD;
+}
+
+@layer base {
+  h1, h2 { @apply font-bold text-dark; }
+  h3, h4, h5, h6 { @apply font-bold text-dark; }
+  h1 { @apply text-7xl; }
+  h2 { @apply text-5xl; }
+  h3 { @apply text-2xl; }
+  h4 { @apply text-xl; }
+  h5 { @apply text-base; }
+  h6 { @apply text-sm; }
+  p { @apply text-base text-mutedPink font-medium; }
+}
+
+:root {
+  --font-base: 'Quicksand', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+}
