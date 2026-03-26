@@ -1,10 +1,13 @@
 import Bar from './components/ui/Bar';
 import Pill from './components/ui/Pill';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
     <>
+    <main>
       <div className='bg-softPink'>
+
         <section className='min-h-dvh w-full flex flex-col items-center justify-center text-center gap-5'>
           <Pill text='COMING SOON <3' />
           <h1 className='text-dark'>
@@ -30,35 +33,40 @@ export default function App() {
           </div>
         </section>
 
-        <section className='grid grid-cols-2 gap-8'>
-          <div className='bg-white border-softPink border rounded-xl px-8 py-6'>
-            <div>
-              <h3>⭐ Sobre mí</h3>
+        <section className='container mx-auto'>
+          <div className='grid grid-cols-2 gap-8'>
+            <div className='bg-white border-softPink border rounded-xl px-8 py-6'>
+              <div>
+                <h3>⭐ Sobre mí</h3>
+              </div>
+              <p>
+                4 años de experiencia trabajando para 
+                proyectos de desarrollo web y soluciones tecnológicas.
+                <br />
+                Me apasiona crear experiencias web claras, funcionales y
+                con intención: mi día a día se divide entre la precisión
+                del desarrollo en WordPress (especialista en Bricks) y
+                la flexibilidad del código puro (JS, PHP, CSS). Además
+                cuento con concimientos en analitica web y experiencia
+                de usuario (UX/UI) 👋🏼.
+              </p>
             </div>
-            <p>
-              4 años de experiencia en el ecosistema digital,
-              trabajando para proyectos de desarrollo web y soluciones
-              tecnológicas.
-              <br />
-              Me apasiona crear experiencias web claras, funcionales y
-              con intención: mi día a día se divide entre la precisión
-              del desarrollo en WordPress (especialista en Bricks) y
-              la flexibilidad del código puro (JS, PHP, CSS). Además
-              cuento con concimientos en analitica web y experiencia
-              de usuario (UX/UI) 👋🏼.
-            </p>
-          </div>
-          <div className='bg-primary/20 rounded-xl px-8 py-6 flex flex-col'>
-            <h3>Avisame cuando esté listo</h3>
-            <p>
-              Deja tu correo para recibir una única notificación el
-              día del lanzamiento oficial.
-            </p>
-            <input></input>
-            <button>Notificarme</button>
+            <div className='bg-primary/20 rounded-xl px-8 py-6 flex flex-col'>
+              <h3>Avisame cuando esté listo</h3>
+              <p>
+                Deja tu correo para recibir una única notificación el
+                día del lanzamiento oficial.
+              </p>
+              <input></input>
+              <button>Notificarme</button>
+            </div>
           </div>
         </section>
+
       </div>
+    </main>
+
+    <Footer />
     </>
   );
 }
